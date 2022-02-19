@@ -1,0 +1,253 @@
+<!-- <?php
+    if(isset($_POST['submit'])){
+        $to_email = 'deecoodeer@gmail.com';
+        $subject = $_POST['subject'];
+        $message = $_POST['messege'];
+        $headers = 'From: '.$_POST['email'];
+        $secure_check = sanitize_my_email($to_email);
+        if ($secure_check == false) {
+            echo "Failed to send";
+        } else { //send email 
+            mail($to_email, $subject, $message, $headers);
+        }
+    }
+    function sanitize_my_email($field) {
+        $field = filter_var($field, FILTER_SANITIZE_EMAIL);
+        if (filter_var($field, FILTER_VALIDATE_EMAIL)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+?> -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta
+			name="description"
+			content="Web site created using create-react-app"
+		/>
+		<link rel="apple-touch-icon" href="/logo192.png" />
+		<!--
+    manifest.json provides metadata used when your web app is installed on a
+    user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+  -->
+		<link rel="manifest" href="/manifest.json" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<!--
+    Notice the use of  in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+
+    Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
+  -->
+		<title>Contact</title>
+
+		<!-- global css -->
+		<style type="text/css">
+			::-webkit-scrollbar {
+				display: none;
+			}
+			@font-face {
+				font-family: Inter Var;
+				src: url(./fonts/Inter-roman.var.woff2);
+			}
+
+			*,
+			*::after,
+			*::before {
+				font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+				-webkit-font-smoothing: antialiased;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+
+		<!-- tailwindcss implimentation -->
+		<link rel="stylesheet" href="../public/tailwind.css" />
+		<script defer="" src="/static/js/bundle.js"></script>
+		<script
+			type="text/javascript"
+			src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"
+		></script>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root">
+			<div class="relative h-screen w-screen bg-black text-white">
+				<div class="relative h-full w-full">
+					<div class="fixed top-0 h-[70px] w-full z-30 bg-black/50 navBar">
+						<div
+							class="relative h-full w-full flex items-center justify-between xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+						>
+							<div class="relative h-auto w-auto">
+								<div class="relative h-auto w-auto text-xl font-bold uppercase">
+									Kush blog
+								</div>
+							</div>
+							<div
+								class="relative h-auto w-auto flex items-center text-xs font-bold uppercase text-gray-400"
+							>
+								<div
+									class="relative h-auto w-auto flex gap-6 items-center pr-3"
+								>
+									<a href="./index.html">
+										<div
+											class="relative h-auto w-auto hover:text-white duration-200 cursor-pointer px-2"
+										>
+											Home
+										</div>
+									</a>
+									<a href="./contact.html">
+										<div
+											class="relative h-auto w-auto hover:text-white duration-200 cursor-pointer px-2"
+										>
+											COntact
+										</div>
+									</a>
+									<a href="./members.html">
+										<div
+											class="relative h-auto w-auto hover:text-white duration-200 cursor-pointer px-2"
+										>
+											members
+										</div>
+									</a>
+									<a href="./notice.html">
+										<div
+											class="relative h-auto w-auto hover:text-white duration-200 cursor-pointer px-2"
+										>
+											notice
+										</div>
+									</a>
+								</div>
+								<div class="relative h-auto w-auto flex gap-6 items-center">
+									<a href="./contact.html">
+										<div
+											class="relative h-[40px] w-auto border bg-white text-black flex items-center gap-3 px-3"
+										>
+											<div class="relative h-auto w-auto">contact</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="relative h-screen w-screen overflow-y-auto scrollContainer"
+					>
+						<div class="relative h-screen w-screen">
+							<div class="fixed top-0 left-0 h-screen w-screen">
+								<div class="relative h-full w-full bg-black"></div>
+								<div
+									class="absolute top-0 left-0 h-full w-full bg-gradient-to-l from-black/30 to-black/80"
+								></div>
+							</div>
+							<div
+								class="relative h-full w-full flex items-center z-10 bg-black/40 xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+							>
+								<div class="relative h-auto w-full">
+									<div
+										class="relative h-auto w-full flex items-center justify-center py-[100px] text-white uppercase text-7xl font-extrabold"
+									>
+										Get in touch
+									</div>
+									<div
+										class="relative h-auto w-full bg-white px-16 py-16 flex justify-center text-black"
+									>
+										<form
+											method="POST"
+											action="./contact.php"
+											class="relative w-[400px] h-auto grid gap-3"
+										>
+											<div
+												class="relative h-[40px] w-full border border-gray-300"
+											>
+												<input
+													type="text"
+													name="email"
+													class="relative h-full w-full outline-none text-xs px-4 placeholder-gray-500"
+													placeholder="email"
+												/>
+											</div>
+											<div
+												class="relative h-[40px] w-full border border-gray-300"
+											>
+												<input
+													type="text"
+													name="password"
+													class="relative h-full w-full outline-none text-xs px-4 placeholder-gray-500"
+													placeholder="password"
+												/>
+											</div>
+											<div
+												class="relative h-[40px] w-full border border-gray-300"
+											>
+												<input
+													type="text"
+													name="confPassword"
+													class="relative h-full w-full outline-none text-xs px-4 placeholder-gray-500"
+													placeholder="confirm password"
+												/>
+											</div>
+											<div class="relative h-[40px] w-full">
+												<input
+													type="submit"
+													class="relative h-full w-full outline-none text-xs px-4 bg-black/90 text-white"
+												/>
+											</div>
+											<div
+												class="relative h-auto w-auto py-4 flex justify-center divide-x"
+											>
+												<div class="relative text-xs font-semibold">Note :</div>
+												<div class="relative text-xs font-light">
+													The email will only be used for communication porpose
+													and nothing more.
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div
+								class="relative h-auto w-full py-6 bg-black flex items-center justify-between xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+							>
+								<div class="relative h-auto w-auto grid gap-3">
+									<div
+										class="relative h-auto w-auto flex items-center divide-x text-xs font-bold"
+									>
+										<div class="relative pr-4">Privacy Policy</div>
+										<div class="relative pl-4">Terms of Use</div>
+									</div>
+									<div class="relative h-auto want text-[9px] uppercase">
+										© 2022 k-Entertainment Nep
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
+
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  --></body>
+	<script src="./index.js"></script>
+</html>

@@ -1,0 +1,379 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta
+			name="description"
+			content="Web site created using create-react-app"
+		/>
+		<link rel="apple-touch-icon" href="/logo192.png" />
+		<!--
+    manifest.json provides metadata used when your web app is installed on a
+    user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+  -->
+		<link rel="manifest" href="/manifest.json" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<!--
+    Notice the use of  in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+
+    Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
+  -->
+		<title>Members</title>
+
+		<!-- global css -->
+		<style type="text/css">
+			::-webkit-scrollbar {
+				display: none;
+			}
+			@font-face {
+				font-family: Inter Var;
+				src: url(./fonts/Inter-roman.var.woff2);
+			}
+
+			.swiper-slide {
+				background: #0000;
+
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		</style>
+
+		<!-- tailwindcss implimentation -->
+		<link rel="stylesheet" href="../public/tailwind.css" />
+		<script defer="" src="/static/js/bundle.js"></script>
+		<script
+			type="text/javascript"
+			src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"
+		></script>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root">
+			<div class="relative h-screen w-screen bg-black text-white">
+				<div class="relative h-full w-full">
+					
+					<div class="fixed top-0 h-[70px] w-full z-30 bg-black/50 navBar">
+						<div
+							class="relative h-full w-full flex items-center justify-between xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+						>
+							<div class="relative h-auto w-auto">
+								<div class="relative h-auto w-auto text-xl font-bold uppercase">
+									Kush blog
+								</div>
+							</div>
+							<div
+								class="relative h-auto w-auto flex items-center text-xs font-bold uppercase text-gray-400"
+							>
+								<div
+									class="relative h-auto w-auto flex gap-6 items-center pr-3"
+								>
+									<a href="./index.html">
+										<div
+											class="relative h-auto w-auto hover:text-white duration-200 cursor-pointer px-2"
+										>
+											Home
+										</div>
+									</a>
+									<a href="./contact.html">
+										<div
+											class="relative h-auto w-auto hover:text-white duration-200 cursor-pointer px-2"
+										>
+											COntact
+										</div>
+									</a>
+									<a href="./members.html">
+										<div
+											class="relative h-auto w-auto hover:text-white duration-200 cursor-pointer px-2"
+										>
+											members
+										</div>
+									</a>
+									<a href="./notice.html">
+										<div
+											class="relative h-auto w-auto hover:text-white duration-200 cursor-pointer px-2"
+										>
+											notice
+										</div>
+									</a>
+								</div>
+								<div class="relative h-auto w-auto flex gap-6 items-center">
+									<a href="./contact.html">
+										<div
+											class="relative h-[40px] w-auto border bg-white text-black flex items-center gap-3 px-3"
+										>
+											<div class="relative h-auto w-auto">contact</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="relative h-screen w-screen overflow-y-auto scrollContainer"
+					>
+						<div class="relative h-auto w-screen">
+							<div class="fixed top-0 left-0 h-screen w-screen">
+								<div class="relative h-full w-full bg-black"></div>
+								<div
+									class="absolute top-0 left-0 h-full w-full bg-gradient-to-l from-black/30 to-black/80"
+								></div>
+							</div>
+							<div
+								class="relative h-auto w-full flex items-center z-10 bg-black/40"
+							>
+								<div class="relative h-auto w-full">
+									<div
+										class="relative left-0 top-0 h-screen w-screen flex items-center justify-center mb-[100px] text-white uppercase text-7xl font-extrabold"
+									>
+										<div class="swiper mySwiper h-full w-full">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div
+														class="relative h-full w-full flex items-end grayscale pb-32"
+														style="
+															background: url(https://images.unsplash.com/photo-1598520059393-1fd1b7f85e35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80);
+															background-size: cover;
+															background-position: center;
+														"
+													>
+														<div
+															class="relative h-auto w-auto grid gap-4 xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+														>
+															<div
+																class="relative h-auto w-auto text-5xl text-white font-extrabold"
+															>
+																Members
+															</div>
+															<div
+																class="relative h-auto w-1/2 text-sm font-light text-gray-300"
+															>
+																Lorem ipsum dolor, sit amet consectetur
+																adipisicing elit. Necessitatibus dignissimos
+																sequi perspiciatis ex, similique et temporibus
+																quo alias totam expedita, aut quod? Nesciunt
+																quam ipsum sequi impedit aliquam. Eius, porro.
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div
+														class="relative h-full w-full flex items-end grayscale pb-32"
+														style="
+															background: url(https://images.unsplash.com/photo-1464666495445-5a33228a808e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80);
+															background-size: cover;
+															background-position: center;
+														"
+													>
+														<div
+															class="relative h-auto w-auto grid gap-4 xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+														>
+															<div
+																class="relative h-auto w-auto text-5xl text-white font-extrabold"
+															>
+																Members
+															</div>
+															<div
+																class="relative h-auto w-1/2 text-sm font-light text-gray-300"
+															>
+																Lorem ipsum dolor, sit amet consectetur
+																adipisicing elit. Necessitatibus dignissimos
+																sequi perspiciatis ex, similique et temporibus
+																quo alias totam expedita, aut quod? Nesciunt
+																quam ipsum sequi impedit aliquam. Eius, porro.
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div
+														class="relative h-full w-full flex items-end grayscale pb-32"
+														style="
+															background: url(https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+															background-size: cover;
+															background-position: center;
+														"
+													>
+														<div
+															class="relative h-auto w-auto grid gap-4 xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+														>
+															<div
+																class="relative h-auto w-auto text-5xl text-white font-extrabold"
+															>
+																Members
+															</div>
+															<div
+																class="relative h-auto w-1/2 text-sm font-light text-gray-300"
+															>
+																Lorem ipsum dolor, sit amet consectetur
+																adipisicing elit. Necessitatibus dignissimos
+																sequi perspiciatis ex, similique et temporibus
+																quo alias totam expedita, aut quod? Nesciunt
+																quam ipsum sequi impedit aliquam. Eius, porro.
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div
+												class="swiper-button-next scale-[0.5] text-white"
+											></div>
+											<div
+												class="swiper-button-prev scale-[0.5] text-white"
+											></div>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div
+										class="relative h-auto w-full bg-black flex justify-center text-black xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+									>
+										<div
+											class="relative h-auto w-full px-16 py-16 flex justify-center text-black"
+										>
+											<div
+												class="relative h-auto w-full flex justify-center gap-4 flex-wrap"
+											>
+												<div class="relative h-auto w-[200px] border">
+													<div class="relative h-[200px] w-full"></div>
+													<div
+														class="relative h-auto w-full text-sm font-semibold bg-white px-3 py-3"
+													>
+														Kushal Giri
+													</div>
+												</div>
+												<div class="relative h-auto w-[200px] border">
+													<div class="relative h-[200px] w-full"></div>
+													<div
+														class="relative h-auto w-full text-sm font-semibold bg-white px-3 py-3"
+													>
+														Kushal Giri
+													</div>
+												</div>
+												<div class="relative h-auto w-[200px] border">
+													<div class="relative h-[200px] w-full"></div>
+													<div
+														class="relative h-auto w-full text-sm font-semibold bg-white px-3 py-3"
+													>
+														Kushal Giri
+													</div>
+												</div>
+												<div class="relative h-auto w-[200px] border">
+													<div class="relative h-[200px] w-full"></div>
+													<div
+														class="relative h-auto w-full text-sm font-semibold bg-white px-3 py-3"
+													>
+														Kushal Giri
+													</div>
+												</div>
+												<div class="relative h-auto w-[200px] border">
+													<div class="relative h-[200px] w-full"></div>
+													<div
+														class="relative h-auto w-full text-sm font-semibold bg-white px-3 py-3"
+													>
+														Kushal Giri
+													</div>
+												</div>
+												<div class="relative h-auto w-[200px] border">
+													<div class="relative h-[200px] w-full"></div>
+													<div
+														class="relative h-auto w-full text-sm font-semibold bg-white px-3 py-3"
+													>
+														Kushal Giri
+													</div>
+												</div>
+												<div class="relative h-auto w-[200px] border">
+													<div class="relative h-[200px] w-full"></div>
+													<div
+														class="relative h-auto w-full text-sm font-semibold bg-white px-3 py-3"
+													>
+														Kushal Giri
+													</div>
+												</div>
+												<div class="relative h-auto w-[200px] border">
+													<div class="relative h-[200px] w-full"></div>
+													<div
+														class="relative h-auto w-full text-sm font-semibold bg-white px-3 py-3"
+													>
+														Kushal Giri
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="relative h-auto w-full py-6 bg-black flex items-center justify-between xl:px-40 lg:px-40 md:px-16 sm:px-8 px-4"
+							>
+								<div class="relative h-auto w-auto grid gap-3">
+									<div
+										class="relative h-auto w-auto flex items-center divide-x text-xs font-bold"
+									>
+										<div class="relative pr-4">Privacy Policy</div>
+										<div class="relative pl-4">Terms of Use</div>
+									</div>
+									<div class="relative h-auto want text-[9px] uppercase">
+										© 2022 k-Entertainment Nep
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				spaceBetween: 0,
+				centeredSlides: true,
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+		<script src="./index.js"></script>
+	</body>
+</html>
